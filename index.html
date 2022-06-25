@@ -9,63 +9,136 @@
   <body>
     <!-- header section -->
     <header class="header">
-      <nav>
-        <a href="" class="logo"
-          ><img class="logo-img" src="./images/Logo.svg" alt="логотип Barbershop" width="69"
-        /></a>
-
+      <a href="" class="logo">
+        <img
+          class="logo-img"
+          src="./images/header/Logo.png"
+          alt="логотип Barbershop"
+          width="69"
+          height="56"
+        />
+      </a>
+      <nav class="header-nav">
         <ul class="header-list">
-          <li>
-            <a href="">О нас</a>
+          <li class="header-item">
+            <a href="" class="header-link">О нас</a>
           </li>
-          <li>
-            <a href="">Услуги и цены</a>
+          <li class="header-item">
+            <a href="" class="header-link">Услуги и цены</a>
           </li>
-          <li>
-            <a href="">Мастера</a>
+          <li class="header-item">
+            <a href="" class="header-link">Мастера</a>
           </li>
-          <li>
-            <a href="">Контакты</a>
+          <li class="header-item">
+            <a href="" class="header-link">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111" class="header-phone">+38 044 111 11 11</a>
-      <button type="button" class="header-btn">онлайн-запись</button>
-      <ul>
-        <li><a href=""> Instagram</a></li>
-        <li><a href="">Youtube</a></li>
-      </ul>
+      <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="header-btn" type="button">онлайн-запись</button>
     </header>
     <!-- main section -->
-    <main>
-      <!-- Hero -->
-      <section>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>Barbershop</h1>
-        <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+    <main class="main">
+      <!-- Hero section-->
+      <section class="hero">
+        <ul class="hero-list">
+          <li class="hero-item">
+            <a
+              class="hero-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://Instagram.com"
+            >
+              Instagram</a
+            >
+          </li>
+          <li class="hero-item">
+            <a
+              class="hero-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://Youtube.com"
+            >
+              Youtube</a
+            >
+          </li>
+        </ul>
+        <p class="hero-uppertitle" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="main-title" lang="en">Barbershop</h1>
+        <p class="hero-desc">
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+        </p>
+        <div class="pagination">
+          <div class="pagination-item"></div>
+          <div class="pagination-item"></div>
+          <div class="pagination-item"></div>
+        </div>
+        <ul class="slider-controls">
+          <li class="slider-item"><button class="slider-btn" type="button">Назад</button></li>
+          <li class="slider-item"><button class="slider-btn" type="button">Вперед</button></li>
+        </ul>
       </section>
-      <!-- О нас -->
-      <section>
-        <img src="./images/img-1.jpg" alt="мужчине стригут бороду" width="270" height="445" />
-        <img src="./images/img-2.jpg" alt="мужчине делают стрижку" width="270" height="445" />
-        <p>О НАС</p>
-        <h2>
+      <!-- about section -->
+      <section class="about">
+        <ul class="about-list">
+          <li class="about-item">
+            <img
+              class="about-img"
+              src="./images/about/img-1.jpg"
+              alt="бритье бороды"
+              width="270"
+              height="445"
+            />
+          </li>
+          <li class="about-item">
+            <img
+              class="about-img"
+              src="./images/about/img-2.jpg"
+              alt="бритье опасной бритвой"
+              width="270"
+              height="445"
+            />
+          </li>
+        </ul>
+        <p class="about-uppertitle">О НАС</p>
+        <h2 class="section-title">
           Лучший Барбершоп<br />
           твоего города
         </h2>
-        <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам</p>
-        <p>
+        <h3 class="section-subtitle">
+          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам
+        </h3>
+        <p class="about-desc">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
           попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
           которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
           каждого, кто к нам приходит!
         </p>
-        <button type="button">онлайн-запись</button>
+        <button class="about-btn" type="button">онлайн-запись</button>
       </section>
-      <!-- Услуги и цены -->
-      <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
+      <!-- price section -->
+      <section class="price">
+        <p class="price-uppertitle">Проведи время в компании лучших мастеров</p>
+        <h2 class="price-title">Услуги и цены</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <ul class="price-inner-list">
+              <li class="price-inner-item">Мужская стрижка от 300 грн</li>
+              <li class="price-inner-item">Стрижка бороды от 200 грн</li>
+              <li class="price-inner-item">Стрижка усов от 200 грн</li>
+              <li class="price-inner-item">Бритье опасной бритвой от 200 грн.</li>
+            </ul>
+          </li>
+          <li class="price-item">
+            <ul class="price-inner-list">
+              <li class="price-inner-item">Cтрижка у стажера от 50 грн.</li>
+              <li class="price-inner-item">Стрижка под насадку от 200 грн.</li>
+              <li class="price-inner-item">Детская стрижка (до 12 лет) от 300 грн.</li>
+              <li class="price-inner-item">Камуфлирование седины от 200 грн.</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="price-btn" type="button">онлайн-запись</button>
       </section>
       <!-- Выбирайте нас -->
       <section>
@@ -124,7 +197,7 @@
           </li>
         </ul>
       </section>
-      <!-- Портфолио -->
+      <!-- portfolio -->
       <section>
         <h2 hidden>Портфолио</h2>
         <p>На латинском языке “барба” означает “борода”</p>
@@ -144,8 +217,59 @@
           </li>
         </ul>
       </section>
+      <!-- contacts -->
+      <section class="contacts">
+        <div>
+          <h2>Онлайн-запись</h2>
+        </div>
+        <div class="contacts-group">
+          <h2 class="section-title">Контакты</h2>
+          <address class="contacts-adress">
+            <ul class="contacts-adress">
+              <li class="contacts-item">
+                <a class="contacts-link" target="_blank" rel="noopener noreferrer" href=""></a>ул.
+                Васильковая, 7А Киев, 08132
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+380441111111"></a>+38 044 111 11 11
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:barbershop@email.com"></a>barbershop@email.com
+              </li>
+            </ul>
+          </address>
+          <p class="contacts-subtitle">время работы</p>
+          <p class="contacts-time">
+            Ежедневно с <time datetime="09:00">9:00</time> до <time datetime="22.00">22:00</time>
+          </p>
+        </div>
+      </section>
     </main>
-    <!-- footer section -->
-    <footer></footer>
+    <!--footer section -->
+    <footer class="footer">
+      <p class="footer-copyright">&#169; Copyright 2020</p>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://Instagram.com"
+          >
+            Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://Youtube.com"
+          >
+            Youtube</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
