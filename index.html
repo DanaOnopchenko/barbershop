@@ -21,16 +21,16 @@
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">
-            <a href="" class="header-link">О нас</a>
+            <a href="#about" class="header-link">О нас</a>
           </li>
           <li class="header-item">
-            <a href="" class="header-link">Услуги и цены</a>
+            <a href="#price" class="header-link">Услуги и цены</a>
           </li>
           <li class="header-item">
-            <a href="" class="header-link">Мастера</a>
+            <a href="#masters" class="header-link">Мастера</a>
           </li>
           <li class="header-item">
-            <a href="" class="header-link">Контакты</a>
+            <a href="#contacts" class="header-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -79,7 +79,7 @@
         </ul>
       </section>
       <!-- about section -->
-      <section class="about">
+      <section class="about" id="about">
         <ul class="about-list">
           <li class="about-item">
             <img
@@ -117,7 +117,7 @@
         <button class="about-btn" type="button">онлайн-запись</button>
       </section>
       <!-- price section -->
-      <section class="price">
+      <section class="price" id="price">
         <p class="price-uppertitle">Проведи время в компании лучших мастеров</p>
         <h2 class="price-title">Услуги и цены</h2>
         <ul class="price-list">
@@ -140,26 +140,26 @@
         </ul>
         <button class="price-btn" type="button">онлайн-запись</button>
       </section>
-      <!-- Выбирайте нас -->
-      <section>
-        <ul>
-          <li>600+ Довольных клиентов в день</li>
-          <li>50+ Наград за отличный сервис</li>
-          <li>20+ Лучших мастеров Киева</li>
-          <li>100+ Подарков постоянным клиентам</li>
+      <!-- Choose us section -->
+      <section class="choose">
+        <ul class="choose-list">
+          <li class="choose-item">600+ Довольных клиентов в день</li>
+          <li class="choose-item">50+ Наград за отличный сервис</li>
+          <li class="choose-item">20+ Лучших мастеров Киева</li>
+          <li class="choose-item">100+ Подарков постоянным клиентам</li>
         </ul>
-        <p>старая традиционная школа</p>
-        <h2>Почему приходят именно к нам?</h2>
-        <p>
+        <p class="choose-uppertitle">старая традиционная школа</p>
+        <h2 class="choose-title">Почему приходят именно к нам?</h2>
+        <p class="choose-desc">
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
           прочитать.
         </p>
       </section>
-      <!-- Наши мастера -->
-      <section>
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
+      <!-- Ours masters section -->
+      <section class="masters" id="masters">
+        <p class="masters-uppertitle">для настоящих ценителей атмосферы</p>
+        <h2 class="masters-title">Наши мастера</h2>
+        <ul class="masters-listff">
           <li>
             <img src="./images/img1.jpg" alt="мастер стрижет мужчину" width="370" height="348" />
             <h3>John Smith</h3>
@@ -198,29 +198,61 @@
         </ul>
       </section>
       <!-- portfolio -->
-      <section>
+      <section class="portfolio">
         <h2 hidden>Портфолио</h2>
-        <p>На латинском языке “барба” означает “борода”</p>
-        <ul>
-          <li>
-            <img src="./images/Barbershop_v1 (Copy)/gallery-1.jpg" alt="" width="270" height="360" /
-            >
+        <p class="section-uppertitle">На латинском языке “барба” означает “борода”</p>
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <img
+              class="portfolio-jpg"
+              src="./images/portfolio/gallery-1@2x.jpg"
+              alt="мастер стрижет мужчину"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery-2@2x.jpg" alt="" width="270" height="360" />
+          <li class="portfolio-item">
+            <img
+              class="portfolio-jpg"
+              src="./images/portfolio/gallery-2@2x.jpg"
+              alt="бритье бороды"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery-3@2x.jpg" alt="" width="270" height="360" />
+          <li class="portfolio-item">
+            <img
+              class="portfolio-jpg"
+              src="./images/portfolio/gallery-3@2x.jpg"
+              alt="бритье бороды"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery-4@2x.jpg" alt="" width="270" height="360" />
+          <li class="portfolio-item">
+            <img
+              class="portfolio-jpg"
+              src="./images/portfolio/gallery-4@2x.jpg"
+              alt="бритье опасной бритвой"
+              width="270"
+              height="360"
+            />
           </li>
         </ul>
       </section>
       <!-- contacts -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div>
           <h2>Онлайн-запись</h2>
+          <form action="">
+            <label for="">
+              <input type="text" />
+            </label>
+            <label for="">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+            <button type="button">отправить</button>
+          </form>
         </div>
         <div class="contacts-group">
           <h2 class="section-title">Контакты</h2>
