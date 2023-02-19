@@ -111,12 +111,12 @@ body {
   text-transform: uppercase;
 }
 
-.uppertitle-light {
+.uppertitle-mode-light {
+  color: var(--main-txt-cl);
+}
+.uppertitle-mode-dark {
   color: var(--secondary-txt-dark);
 }
-/* .uppertitle-dark {
-  color:var()} 
-*/
 
 .main-title {
   font-family: var(--secondary-font);
