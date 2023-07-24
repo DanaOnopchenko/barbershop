@@ -9,12 +9,12 @@
  color: #9da4bd;
     color: #555555; */
 
-  --main-txt-cl: #303030;
+  --main-txt-color: #303030;
   --secondary-txt-dark: rgba(157, 164, 189, 0.6);
   --secondary-txt-ligth: #9da4bd;
   --secondary-txt-grey: #555555;
-  --accent-cl: #ff6c00;
-  --primary-white-cl: #ffffff;
+  --accent-color: #ff6c00;
+  --primary-white-color: #ffffff;
 
   /* background */
   --bg-dark: #191c26;
@@ -42,18 +42,18 @@ body {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 
 .header-link:hover,
 .header-phone:hover,
 .header-link:focus,
 .header-phone:focus {
-  color: var(--accent-cl);
+  color: var(--accent-color);
 }
 
 .current {
-  color: var(--accent-cl);
+  color: var(--accent-color);
 }
 
 .btn {
@@ -65,18 +65,18 @@ body {
   text-transform: uppercase;
   background: transparent;
   cursor: pointer;
-  border: 1px solid var(--accent-cl);
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--accent-cl);
-  color: var(--primary-white-cl);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .dark-btn {
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 .header {
   background-color: var(--bg-dark);
@@ -94,7 +94,7 @@ body {
 }
 .hero-link:hover,
 .hero-link:focus {
-  color: var(--accent-cl);
+  color: var(--accent-color);
 }
 
 .hero-desc {
@@ -112,7 +112,7 @@ body {
 }
 
 .uppertitle-mode-light {
-  color: var(--main-txt-cl);
+  color: var(--main-txt-color);
 }
 .uppertitle-mode-dark {
   color: var(--secondary-txt-dark);
@@ -123,7 +123,7 @@ body {
   font-size: 72px;
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 .title {
   font-family: var(--secondary-font);
@@ -133,7 +133,6 @@ body {
 }
 
 .subtitle {
-  font-weight: 400;
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -145,7 +144,7 @@ body {
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   background-color: transparent;
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 /* About section */
 
@@ -189,14 +188,14 @@ body {
   font-size: 14px;
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
-  color: var(--accent-cl);
+  color: var(--accent-color);
 }
 /* contacts section */
 .contacts {
   background-color: var(--bg-dark);
 }
 .contact-title {
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 .contacts-address {
   font-style: inherit;
@@ -208,7 +207,7 @@ body {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary-white-cl);
+  color: var(--primary-white-color);
 }
 .contacts-time {
   color: var(--secondary-txt-ligth);
@@ -231,7 +230,7 @@ body {
 }
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--accent-cl);
+  color: var(--accent-color);
 }
 
 /* TEST */
