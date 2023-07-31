@@ -15,6 +15,7 @@
   /* background colors*/
   --bg-dark: #191c26;
   --bg-grey: #f7f7f7;
+  --bg-price: #111319;
 
   /* others */
   --indent: 30px;
@@ -63,6 +64,9 @@ img {
   outline: 1px solid red;
 }
 .uppertitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -70,14 +74,25 @@ img {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-
+.uppertitle::before {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+}
 .uppertitle-mode-light {
   color: var(--main-txt-color);
 }
+.uppertitle-mode-light::before {
+  background-color: var(--main-txt-color);
+}
+
 .uppertitle-mode-dark {
   color: var(--secondary-txt-dark);
 }
-
+.uppertitle-mode-dark::before {
+  color: red;
+}
 .section-title {
   font-family: var(--secondary-font);
   font-size: 42px;
@@ -147,7 +162,8 @@ img {
   color: var(--primary-white-color);
 }
 
-.price-btn {
+.price-btn,
+.contacts-btn {
   display: block;
   margin: 0 auto;
 }
@@ -246,7 +262,14 @@ img {
 }
 /* price section */
 .price-section {
-  background-color: var(--bg-dark);
+  max-width: 1270px;
+  background-color: var(--bg-price);
+  background-image: url(../images/price/img@2x.png);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
 }
 .price-list {
   display: flex;
@@ -255,8 +278,8 @@ img {
 
 .price-item {
   flex-basis: 50%;
-
   padding: 30px 40px;
+  margin-bottom: 0px;
 }
 .price-inner-list {
   color: var(--secondary-txt-ligth);
@@ -271,15 +294,30 @@ img {
 .price-inner-item:last-child {
   margin-bottom: 0;
 }
-/* Choose section */
-.choose-container {
+/* benefits section */
+.benefits-container {
   display: flex;
 }
-.choose-list {
+.benefits-list {
   flex-basis: 540px;
   margin-right: 130px;
 }
-.choose-content {
+.benefits-item {
+  background-color: var(--bg-grey);
+  width: 170px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+benefits-desc {
+  text-transform: lowercase;
+}
+.benefits-content {
   flex-basis: 540px;
 }
 /* masters section */
@@ -323,10 +361,20 @@ img {
 
 /* contacts section */
 .contacts {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--bg-dark);
+  background-image: url(../images/contacts/contacts-bg.png);
+  background-repeat: no-repeat;
+
+  background-position: top 0 left calc(50% + 328px);
 }
 .contacts-container {
   display: flex;
+}
+.contacts-form {
+  flex-basis: 50%;
 }
 .contact-title {
   color: var(--primary-white-color);
@@ -337,7 +385,8 @@ img {
   flex-wrap: wrap;
 }
 .contacts-group {
-  flex-basis: 565px;
+  flex-basis: 50%;
+  padding-left: 100px;
 }
 .contacts-address {
   font-style: inherit;
@@ -350,6 +399,15 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+.contacts-address {
+  margin-bottom: 70px;
+}
+.contacts-item {
+  margin-bottom: 20px;
+}
+.contacts-item:last-child {
+  margin-bottom: 0px;
 }
 .contacts-time {
   color: var(--secondary-txt-ligth);
