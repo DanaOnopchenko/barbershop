@@ -91,7 +91,7 @@ img {
   color: var(--secondary-txt-dark);
 }
 .uppertitle-mode-dark::before {
-  color: red;
+  background-color: var(--secondary-txt-dark);
 }
 .section-title {
   font-family: var(--secondary-font);
@@ -281,6 +281,12 @@ img {
   padding: 30px 40px;
   margin-bottom: 0px;
 }
+.price-item:nth-child(1) {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-item:nth-child(2) {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 .price-inner-list {
   color: var(--secondary-txt-ligth);
 }
@@ -299,6 +305,7 @@ img {
   display: flex;
 }
 .benefits-list {
+  justify-content: center;
   flex-basis: 540px;
   margin-right: 130px;
 }
@@ -314,8 +321,21 @@ img {
   padding-left: 20px;
   text-align: center;
 }
-benefits-desc {
-  text-transform: lowercase;
+.benefits-quantity {
+  display: flex;
+  justify-content: center;
+}
+.benefits-quantity::after {
+  content: '\002B';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--accent-color);
+}
+.benefits-desc {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
 }
 .benefits-content {
   flex-basis: 540px;
@@ -393,12 +413,23 @@ benefits-desc {
   color: var(--secondary-txt-ligth);
 }
 .contacts-subtitle {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.contacts-subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-txt-dark);
 }
 .contacts-address {
   margin-bottom: 70px;
@@ -411,6 +442,7 @@ benefits-desc {
 }
 .contacts-time {
   color: var(--secondary-txt-ligth);
+  margin-bottom: 0px;
 }
 
 /* footer section*/
