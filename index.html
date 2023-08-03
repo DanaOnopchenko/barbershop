@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-page>
     <!-- header section -->
     <header class="header" data-header>
       <div class="container header-container">
@@ -46,9 +46,7 @@
           </ul>
         </nav>
         <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn btn dark-btn" type="button" data-open-modal="modal1">
-          онлайн-запис
-        </button>
+        <button class="header-btn btn dark-btn" type="button" data-open-modal>онлайн-запис</button>
       </div>
     </header>
 
@@ -141,9 +139,7 @@
               клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
               приходить!
             </p>
-            <button class="about-btn btn" type="button" data-open-modal="modal2">
-              онлайн-запис
-            </button>
+            <button class="about-btn btn" type="button" data-open-modal>онлайн-запис</button>
           </div>
         </div>
       </section>
@@ -560,9 +556,9 @@
     </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal" id="modal">
         <button class="modal-btn" data-close-modal>
-          <svg class="modal-btn-icon" width="15" height="15">
+          <svg class="modal-close-btn" width="15" height="15">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>

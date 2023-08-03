@@ -12,20 +12,25 @@
 //   }
 // }
 
-(() => {
-    const refs = {
-        openModalButton: document.querySelector('[data-open-modal]'),
-        closeModalButton: document.querySelector('[data-close-modal]'),
-        modal: document.querySelector('[data-modal]')
-    }
-    refs.openModalButton.addEventListener('click', toggleModal);
-    refs.closeModalButton.addEventListener('click', toggleModal);
 
- 
-    
-    function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-    }
-  
+
+(() => {
+  const refs = {
+    openModalBtns: document.querySelectorAll('[data-open-modal]'),
+    closeModalBtn: document.querySelector('[data-close-modal]'),
+      modal: document.querySelector('[data-modal]'),
+    body:document.querySelector('[data-page]')
+  }
+
+  refs.openModalBtns.forEach(el => el.addEventListener('click', toggleModal));
+
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+      refs.body.classList.toggle('no-scroll')
+  }
 })();
-  
+
+
+

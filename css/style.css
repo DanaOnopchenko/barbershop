@@ -27,6 +27,9 @@ body {
   color: var(--main-txt-color);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
 /* reset styles */
 h1,
 h2,
@@ -635,7 +638,7 @@ img {
   border-radius: 15px 0 15px 0;
   background-color: var(--primary-white-color);
 }
-.modal-btn-icon {
+.modal-close-btn {
   position: absolute;
   right: 10px;
   top: 10px;
