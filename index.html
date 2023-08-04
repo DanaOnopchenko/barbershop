@@ -18,13 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body data-page>
     <!-- header section -->
     <header class="header" data-header>
       <div class="container header-container">
-        <a href="" class="logo link">
+        <a href="" class="logo link" data-logo>
           <svg class="logo-icon" width="69" height="56">
             <use href="./images/icons.svg#logo"></use>
           </svg>
@@ -61,7 +65,7 @@
 
               <li class="hero-item">
                 <a
-                  class="hero-link link hero-link-img"
+                  class="hero-link link"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://Instagram.com"
@@ -86,8 +90,8 @@
               A hair salon for men in Kyiv
             </p>
             <h1 class="main-title" lang="en">BarberShop</h1>
-            <p class="hero-desc subtitle">
-              Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
+            <p class="hero-desc">
+              Ми експерти у модних чоловічих стрижках. Працюємо&nbsp;швидко, обережно та зі смаком.
             </p>
             <div class="pagination">
               <div class="pagination-item active"></div>
@@ -129,7 +133,9 @@
           </ul>
           <div class="about-content">
             <p class="about-uppertitle uppertitle uppertitle-mode-light">ПРО НАС</p>
-            <h2 class="section-title section-title-mode-dark">Найкращий Барбершоп твого міста</h2>
+            <h2 class="section-title section-title-mode-dark">
+              Найкращий&nbsp;Барбершоп твого міста
+            </h2>
             <h3 class="about-subtitle subtitle">
               Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас
             </h3>
@@ -169,7 +175,12 @@
               </ul>
             </li>
           </ul>
-          <button class="price-btn btn dark-btn" type="button">онлайн-запись</button>
+          <button
+            class="price-btn btn dark-btn animate__animated animate__pulse animate__infinite"
+            type="button"
+          >
+            онлайн-запись
+          </button>
         </div>
       </section>
 
@@ -222,7 +233,7 @@
                 height="348"
               />
               <div class="master-wrapper">
-                <h3 class="master-subtitle subtitle">John Smith</h3>
+                <h3 class="master-subtitle">John Smith</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
                   <li class="social-item">
@@ -290,7 +301,7 @@
                 height="348"
               />
               <div class="master-wrapper">
-                <h3 class="master-subtitle subtitle">Michele Doe</h3>
+                <h3 class="master-subtitle">Michele Doe</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
                   <li class="social-item">
@@ -358,7 +369,7 @@
                 height="348"
               />
               <div class="master-wrapper">
-                <h3 class="master-subtitle subtitle">Alan Black</h3>
+                <h3 class="master-subtitle">Alan Black</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
                   <li class="social-item">
@@ -556,9 +567,9 @@
     </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal" id="modal">
+      <div class="modal">
         <button class="modal-btn" data-close-modal>
-          <svg class="modal-close-btn" width="15" height="15">
+          <svg class="modal-close-btn" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>

@@ -14,12 +14,15 @@
 
 window.addEventListener('scroll', () => { 
     const header = document.querySelector('[data-header]');
+    const logo = document.querySelector('[data-logo]');
     const headerOffsetTrigger = header.offsetTop;
 
     if (window.scrollY > headerOffsetTrigger) {
         header.classList.add('no-transparency');
+        logo.classList.add('logo-white')
     }
     else { 
-        header.classList.remove('no-transparency')
+        header.classList.remove('no-transparency');
+        logo.classList.remove('logo-white')
     }
 })

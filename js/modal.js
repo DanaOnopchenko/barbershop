@@ -18,7 +18,7 @@
   const refs = {
     openModalBtns: document.querySelectorAll('[data-open-modal]'),
     closeModalBtn: document.querySelector('[data-close-modal]'),
-      modal: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-modal]'),
     body:document.querySelector('[data-page]')
   }
 
