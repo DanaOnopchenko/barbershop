@@ -449,11 +449,11 @@ img {
 }
 
 .benefits-list {
-  width: 370px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   margin: 0 auto;
+  width: 400px;
 }
 
 .benefits-item {
@@ -462,6 +462,10 @@ img {
   padding: 20px;
   text-align: center;
   background-color: var(--bg-grey);
+}
+.benefits-item:nth-child(2n + 1) {
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .benefits-quantity {
@@ -639,6 +643,7 @@ img {
 /* footer section*/
 .footer {
   min-height: 127px;
+  align-items: center;
 }
 .footer-container {
   display: flex;
@@ -659,6 +664,7 @@ img {
   gap: 40px;
 }
 .footer-link {
+  display: block;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
