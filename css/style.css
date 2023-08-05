@@ -162,8 +162,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.price-btn,
-.contacts-btn {
+.price-btn {
   display: block;
   margin: 0 auto;
 }
@@ -462,6 +461,7 @@ img {
   padding: 20px;
   text-align: center;
   background-color: var(--bg-grey);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .benefits-item:nth-child(2n + 1) {
   margin-bottom: 30px;
@@ -590,6 +590,38 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+.contacts-btn {
+  display: block;
+}
+.form-input {
+  width: 270px;
+  margin-bottom: 44px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary-txt-dark);
+}
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--primary-white-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.form-message {
+  width: 560px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary-txt-dark);
+  margin-bottom: 44px;
+}
+
 .contacts-group {
   flex-basis: 50%;
   padding-left: 100px;
@@ -703,12 +735,16 @@ img {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 500px;
+  padding: 25px;
   border-radius: 15px 0 15px 0;
   background-color: var(--primary-white-color);
 }
 
-.modal-close-btn {
+.modal-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 10px;
   top: 10px;
   width: 30px;
@@ -720,4 +756,14 @@ img {
   cursor: pointer;
 
   border: 1px solid var(--accent-color);
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+.modal-form-input {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
 }

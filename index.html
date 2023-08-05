@@ -178,6 +178,7 @@
           <button
             class="price-btn btn dark-btn animate__animated animate__pulse animate__infinite"
             type="button"
+            data-open-modal
           >
             онлайн-запись
           </button>
@@ -485,14 +486,29 @@
           <div class="contacts-form">
             <h2 class="section-title section-title-mode-light">Онлайн-запис</h2>
             <form class="form-list">
-              <label for="">
-                <input type="text" />
+              <label for="user-name">
+                <span class="form-label">Им’я*</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-name"
+                  placeholder="Ваше ім'я"
+                  required
+                />
               </label>
-              <label for="">
-                <input type="text" />
+              <label for="user-phone">
+                <span class="form-label">Телефон*</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-phone"
+                  placeholder="+38(066) 587-65-54"
+                  required
+                />
               </label>
-              <label for="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="user-message">
+                <span class="form-label"> повідомлення</span>
+                <textarea class="form-message" id="" cols="30" rows="10"></textarea>
               </label>
               <button class="btn dark-btn contacts-btn" type="submit">Відправити</button>
             </form>
@@ -565,6 +581,7 @@
         </ul>
       </div>
     </footer>
+
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -573,6 +590,34 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form name="modal-form" autocomplete="off">
+          <label class="form-wrap" for="modal-user-name">
+            <span class="modal-form-label">Им’я*</span>
+            <input
+              class="modal-form-input"
+              type="text"
+              id="modal-user-name"
+              placeholder="Ваше ім'я"
+              required
+            />
+          </label>
+          <label class="form-wrap" for="modal-user-phone">
+            <span class="modal-form-label">Телефон*</span>
+            <input
+              class="modal-form-input"
+              type="text"
+              id="modal-user-phone"
+              placeholder="+38(066) 587-65-54"
+              required
+            />
+          </label>
+          <label class="form-wrap" for="modal-user-message">
+            <span class="modal-form-label"> Повідомлення</span>
+            <textarea class="moal-form-message" id="" cols="30" rows="10"></textarea>
+          </label>
+          <button class="btn modal-form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/header-scroll.js"></script>
