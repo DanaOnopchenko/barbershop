@@ -485,32 +485,43 @@
         <div class="container contacts-container">
           <div class="contacts-form">
             <h2 class="section-title section-title-mode-light">Онлайн-запис</h2>
-            <form class="form-list">
-              <label for="user-name">
-                <span class="form-label">Им’я*</span>
-                <input
-                  class="form-input"
-                  type="text"
-                  id="user-name"
-                  placeholder="Ваше ім'я"
-                  required
-                />
+            <form class="contact-form-list">
+              <div class="contacts-form-wrap">
+                <label class="contact-form-group" for="user-name">
+                  <input
+                    class="contact-form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я"
+                    required
+                  />
+                  <span class="contact-form-label">Им’я*</span>
+                </label>
+                <label class="contact-form-group" for="user-phone">
+                  <input
+                    class="contact-form-input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    placeholder="+38(066) 587-65-54"
+                    required
+                  />
+                  <span class="contact-form-label">Телефон*</span>
+                </label>
+              </div>
+              <label class="contact-form-group" for="user-message">
+                <textarea
+                  class="contact-form-message"
+                  id="user-message"
+                  name="user-message"
+                  cols="50"
+                  rows="5"
+                >
+                </textarea>
+                <span class="contact-message-label">повідомлення</span>
               </label>
-              <label for="user-phone">
-                <span class="form-label">Телефон*</span>
-                <input
-                  class="form-input"
-                  type="text"
-                  id="user-phone"
-                  placeholder="+38(066) 587-65-54"
-                  required
-                />
-              </label>
-              <label for="user-message">
-                <span class="form-label"> повідомлення</span>
-                <textarea class="form-message" id="" cols="50" rows="10"></textarea>
-              </label>
-              <button class="btn contacts-btn" type="submit">Відправити</button>
+              <button class="btn contacts-form-btn" type="submit">Відправити</button>
             </form>
           </div>
           <div class="contacts-group">
