@@ -50,7 +50,9 @@
           </ul>
         </nav>
         <a class="header__phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn btn dark-btn" type="button" data-open-modal>онлайн-запис</button>
+        <button class="header-btn btn btn--mode-dark" type="button" data-open-modal>
+          онлайн-запис
+        </button>
       </div>
     </header>
 
@@ -58,14 +60,13 @@
     <main class="main">
       <!-- Hero section-->
       <section class="hero">
-        <div class="hero-container container">
-          <div class="hero-left-side">
+        <div class="hero__container container">
+          <div class="hero__left-side">
             <ul class="hero-list list">
               <!--social icons -->
-
-              <li class="hero-item">
+              <li class="hero-list__item">
                 <a
-                  class="hero-link link"
+                  class="hero-list__link link"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://Instagram.com"
@@ -73,9 +74,9 @@
                   Instagram</a
                 >
               </li>
-              <li class="hero-item">
+              <li class="hero-list__item">
                 <a
-                  class="hero-link link"
+                  class="hero-list__link link"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://Youtube.com"
@@ -85,24 +86,26 @@
               </li>
             </ul>
           </div>
-          <div class="hero-rigth-side">
-            <p class="hero-uppertitle uppertitle uppertitle-mode-dark" lang="en">
+          <div class="hero__right-side">
+            <p class="hero__uppertitle uppertitle uppertitle--mode-dark" lang="en">
               A hair salon for men in Kyiv
             </p>
             <h1 class="main-title" lang="en">BarberShop</h1>
-            <p class="hero-desc">
+            <p class="hero__desc">
               Ми експерти у модних чоловічих стрижках. Працюємо&nbsp;швидко, обережно та зі смаком.
             </p>
             <div class="pagination">
-              <div class="pagination-item active"></div>
-              <div class="pagination-item"></div>
-              <div class="pagination-item"></div>
+              <div class="pagination__item active"></div>
+              <div class="pagination__item"></div>
+              <div class="pagination__item"></div>
             </div>
             <ul class="slider-controls list">
-              <li class="slider-item">
-                <button class="slider-btn disabled" type="button">Назад</button>
+              <li class="slider-controls__item">
+                <button class="slider__btn disabled" type="button">Назад</button>
               </li>
-              <li class="slider-item"><button class="slider-btn" type="button">Вперед</button></li>
+              <li class="slider-controls__item">
+                <button class="slider__btn" type="button">Вперед</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -110,20 +113,20 @@
 
       <!-- about section -->
       <section class="about section" id="about">
-        <div class="container about-container">
+        <div class="container about__container">
           <ul class="about-list list">
-            <li class="about-item">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./images/about/img-1.jpg"
                 alt="бритье бороды"
                 width="270"
                 height="445"
               />
             </li>
-            <li class="about-item">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./images/about/img-2.jpg"
                 alt="бритье опасной бритвой"
                 width="270"
@@ -131,52 +134,52 @@
               />
             </li>
           </ul>
-          <div class="about-content">
-            <p class="about-uppertitle uppertitle uppertitle-mode-light">ПРО НАС</p>
-            <h2 class="section-title section-title-mode-dark">
+          <div class="about__content">
+            <p class="about__uppertitle uppertitle uppertitle--mode-light">ПРО НАС</p>
+            <h2 class="section-title section-title--mode-dark">
               Найкращий&nbsp;Барбершоп твого міста
             </h2>
-            <h3 class="about-subtitle subtitle">
+            <h3 class="about__subtitle subtitle">
               Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас
             </h3>
-            <p class="description">
+            <p class="about__desc">
               Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І коли ти потрапиш
               до рук нашого майстра, то вже ніколи не зможеш бути колишнім. Ми команда, яка завжди з
               клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
               приходить!
             </p>
-            <button class="about-btn btn" type="button" data-open-modal>онлайн-запис</button>
+            <button class="about__btn btn" type="button" data-open-modal>онлайн-запис</button>
           </div>
         </div>
       </section>
 
       <!-- price section -->
-      <section class="price-section section" id="price">
+      <section class="price section" id="price">
         <div class="container">
-          <p class="price-uppertitle uppertitle uppertitle-mode-dark">
+          <p class="price__uppertitle uppertitle uppertitle--mode-dark">
             Проведи час у компанії найкращих майстрів
           </p>
-          <h2 class="section-title section-title-mode-light">Послуги та ціни</h2>
-          <ul class="price-list list">
-            <li class="price-item subtitle">
-              <ul class="price-inner-list list">
-                <li class="price-inner-item">Чоловіча стрижка від 300 грн</li>
-                <li class="price-inner-item">Стрижка бороди від 200 грн</li>
-                <li class="price-inner-item">Стрижка вусів від 200 грн</li>
-                <li class="price-inner-item">Гоління небезпечною бритвою від 200 грн.</li>
+          <h2 class="section-title section-title--mode-light">Послуги та ціни</h2>
+          <ul class="price__list list">
+            <li class="price__items subtitle">
+              <ul class="price__inner-list list">
+                <li class="price__inner-item">Чоловіча стрижка від 300 грн</li>
+                <li class="price__inner-item">Стрижка бороди від 200 грн</li>
+                <li class="price__inner-item">Стрижка вусів від 200 грн</li>
+                <li class="price__inner-item">Гоління небезпечною бритвою від 200 грн.</li>
               </ul>
             </li>
-            <li class="price-item subtitle">
-              <ul class="price-inner-list list">
-                <li class="price-inner-item">Стрижка у стажера від 50 грн.</li>
-                <li class="price-inner-item">Стрижка під насадку від 200 грн.</li>
-                <li class="price-inner-item">Дитяча стрижка (до 12 років) від 300 грн.</li>
-                <li class="price-inner-item">Камуфлювання сивини від 200 грн.</li>
+            <li class="price__items subtitle">
+              <ul class="price__inner-list list">
+                <li class="price__inner-item">Стрижка у стажера від 50 грн.</li>
+                <li class="price__inner-item">Стрижка під насадку від 200 грн.</li>
+                <li class="price__inner-item">Дитяча стрижка (до 12 років) від 300 грн.</li>
+                <li class="price__inner-item">Камуфлювання сивини від 200 грн.</li>
               </ul>
             </li>
           </ul>
           <button
-            class="price-btn btn dark-btn animate__animated animate__pulse animate__infinite"
+            class="price-btn btn btn--mode-dark animate__animated animate__pulse animate__infinite"
             type="button"
             data-open-modal
           >
@@ -187,28 +190,30 @@
 
       <!-- benefits section -->
       <section class="benefits section">
-        <div class="container benefits-container">
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <p class="benefits-quantity section-title">600</p>
-              <p class="benefits-desc">Задоволених клієнтів на день</p>
+        <div class="container benefits__container">
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <p class="benefits__quantity section-title">600</p>
+              <p class="benefits__desc">Задоволених клієнтів на день</p>
             </li>
-            <li class="benefits-item">
-              <p class="benefits-quantity section-title">50</p>
-              <p class="benefits-desc">Нагород за відмінний сервіс</p>
+            <li class="benefits__item">
+              <p class="benefits__quantity section-title">50</p>
+              <p class="benefits__desc">Нагород за відмінний сервіс</p>
             </li>
-            <li class="benefits-item">
-              <p class="benefits-quantity section-title">20</p>
-              <p class="benefits-desc">Найкращих майстрів Києва</p>
+            <li class="benefits__item">
+              <p class="benefits__quantity section-title">20</p>
+              <p class="benefits__desc">Найкращих майстрів Києва</p>
             </li>
-            <li class="benefits-item">
-              <p class="benefits-quantity section-title">100</p>
-              <p class="benefits-desc">Подарунок постійним клієнтам</p>
+            <li class="benefits__item">
+              <p class="benefits__quantity section-title">100</p>
+              <p class="benefits__desc">Подарунок постійним клієнтам</p>
             </li>
           </ul>
-          <div class="benefits-content">
-            <p class="uppertitle uppertitle-mode-light">стара традиційна школа</p>
-            <h2 class="section-title section-title-mode-dark">Чому приходять саме до нас?</h2>
+          <div class="benefits__content">
+            <p class="benefits__uppertitle uppertitle uppertitle--mode-light">
+              стара традиційна школа
+            </p>
+            <h2 class="section-title section-title--mode-dark">Чому приходять саме до нас?</h2>
             <p class="subtitle">
               Про нас говорять лише добре. Але краще один раз побачити та відчути, ніж 10 разів
               прочитати.
@@ -223,7 +228,7 @@
           <p class="masters-uppertitle uppertitle uppertitle-mode-light">
             для справжніх поціновувачів атмосфери
           </p>
-          <h2 class="section-title section-title-mode-dark masters-title">Наші майстри</h2>
+          <h2 class="section-title section-title--mode-dark masters__title">Наші майстри</h2>
           <ul class="card-set list" lang="en">
             <li class="card-set-item">
               <img
@@ -233,7 +238,7 @@
                 width="370"
                 height="348"
               />
-              <div class="master-wrapper">
+              <div class="masters__wrapper">
                 <h3 class="master-subtitle">John Smith</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
@@ -301,7 +306,7 @@
                 width="370"
                 height="348"
               />
-              <div class="master-wrapper">
+              <div class="masters__wrapper">
                 <h3 class="master-subtitle">Michele Doe</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
@@ -369,7 +374,7 @@
                 width="370"
                 height="348"
               />
-              <div class="master-wrapper">
+              <div class="masters__wrapper">
                 <h3 class="master-subtitle">Alan Black</h3>
                 <p class="master-desc">Extreme Barber</p>
                 <ul class="master-social-list list">
@@ -484,7 +489,7 @@
       <section class="contacts section" id="contacts">
         <div class="container contacts-container">
           <div class="contacts-form">
-            <h2 class="section-title section-title-mode-light">Онлайн-запис</h2>
+            <h2 class="section-title section-title--mode-light">Онлайн-запис</h2>
             <form class="contact-form-list">
               <div class="contacts-form-wrap">
                 <label class="contact-form-group" for="user-name">
@@ -525,7 +530,7 @@
             </form>
           </div>
           <div class="contacts-group">
-            <h2 class="section-title section-title-mode-light">Контакти</h2>
+            <h2 class="section-title section-title--mode-light">Контакти</h2>
             <address class="contacts-address subtitle">
               <ul class="contacts-address list">
                 <li class="contacts-item">
