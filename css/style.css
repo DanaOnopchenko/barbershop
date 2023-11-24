@@ -249,8 +249,8 @@ img {
   transition: color var(--anim-fast);
 }
 
-.heade__phone:hover,
-.heade__phone:focus {
+.header__phone:hover,
+.header__phone:focus {
   color: var(--accent-color);
 }
 
