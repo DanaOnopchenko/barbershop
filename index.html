@@ -550,7 +550,7 @@
                 </textarea>
                 <span class="form-registration__text">повідомлення</span>
               </label>
-              <button class="btn form-registration__btn" type="submit">Відправити</button>
+              <button class="btn btn--animation" type="submit">Відправити</button>
             </form>
           </div>
 
@@ -606,8 +606,8 @@
               rel="noopener noreferrer"
               href="https://Instagram.com"
             >
-              Instagram</a
-            >
+              Instagram
+            </a>
           </li>
           <li class="footer__item">
             <a
@@ -616,28 +616,28 @@
               rel="noopener noreferrer"
               href="https://Youtube.com"
             >
-              Youtube</a
-            >
+              Youtube
+            </a>
           </li>
         </ul>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" data-close-modal>
-          <svg class="modal-close-btn-icon" width="20" height="20">
+        <button class="modal__close-btn" data-close-modal>
+          <svg class="modal__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form name="modal-form" autocomplete="off">
-          <h1 class="modal-form-title">Онлайн-запис</h1>
-          <label class="form-wrap" for="modal-user-name">
-            <span class="modal-form-label">Им’я*</span>
+          <h1 class="modal-form__title">Онлайн-запис</h1>
+          <label class="modal-form__wrap" for="modal-user-name">
+            <span class="modal-form__label">Им’я*</span>
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="text"
               id="modal-user-name"
               placeholder="Ваше ім'я"
@@ -645,10 +645,10 @@
               required
             />
           </label>
-          <label class="form-wrap" for="modal-user-phone">
-            <span class="modal-form-label">Телефон*</span>
+          <label class="modal-form__wrap" for="modal-user-phone">
+            <span class="modal-form__label">Телефон*</span>
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="text"
               id="modal-user-phone"
               name="user-phone"
@@ -656,12 +656,19 @@
               required
             />
           </label>
-          <label class="form-wrap" for="modal-user-message">
-            <span class="modal-form-label"> Повідомлення</span>
-            <textarea class="modal-form-message" name="user-message" cols="30" rows="10"></textarea>
+          <label class="modal-form__wrap" for="modal-user-message">
+            <span class="modal-form__label"> Повідомлення</span>
+            <textarea
+              class="modal-form__message"
+              name="user-message"
+              cols="30"
+              rows="10"
+            ></textarea>
           </label>
-          <strong class="form-desc">Залиште свої дані, ми обов'язково вам передзвонимо</strong>
-          <button class="btn modal-form-btn" type="submit">Відправити</button>
+          <strong class="modal-form__desc"
+            >Залиште свої дані, ми обов'язково вам передзвонимо</strong
+          >
+          <button class="btn btn--animation modal-form__btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
