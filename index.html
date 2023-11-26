@@ -62,11 +62,11 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__left-side">
-            <ul class="hero-list list">
-              <!--social icons -->
-              <li class="hero-list__item">
+            <!-- Social list -->
+            <ul class="social-list list">
+              <li class="social-list__item">
                 <a
-                  class="hero-list__link link"
+                  class="social-list__link link"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://Instagram.com"
@@ -74,9 +74,9 @@
                   Instagram</a
                 >
               </li>
-              <li class="hero-list__item">
+              <li class="social-list__item">
                 <a
-                  class="hero-list__link link"
+                  class="social-list__link link"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://Youtube.com"
@@ -114,7 +114,7 @@
       <!-- about section -->
       <section class="about section" id="about">
         <div class="container about__container">
-          <ul class="about-list list">
+          <ul class="about__list list">
             <li class="about-list__item">
               <img
                 class="about-list__img"
@@ -163,23 +163,47 @@
           <ul class="price__list list">
             <li class="price__items subtitle">
               <ul class="price__inner-list list">
-                <li class="price__inner-item">Чоловіча стрижка від 300 грн</li>
-                <li class="price__inner-item">Стрижка бороди від 200 грн</li>
-                <li class="price__inner-item">Стрижка вусів від 200 грн</li>
-                <li class="price__inner-item">Гоління небезпечною бритвою від 200 грн.</li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Чоловіча стрижка</span>
+                  <span class="price__iner-desc">від 300 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Стрижка бороди</span>
+                  <span class="price__iner-desc">від 200 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Стрижка вусів</span>
+                  <span class="price__iner-desc">від 200 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Гоління небезпечною бритвою</span>
+                  <span class="price__iner-desc">від 200 грн. </span>
+                </li>
               </ul>
             </li>
             <li class="price__items subtitle">
               <ul class="price__inner-list list">
-                <li class="price__inner-item">Стрижка у стажера від 50 грн.</li>
-                <li class="price__inner-item">Стрижка під насадку від 200 грн.</li>
-                <li class="price__inner-item">Дитяча стрижка (до 12 років) від 300 грн.</li>
-                <li class="price__inner-item">Камуфлювання сивини від 200 грн.</li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Стрижка у стажера</span>
+                  <span class="price__iner-desc">від 50 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Стрижка під насадку</span>
+                  <span class="price__iner-desc">від 200 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Дитяча стрижка (до 12 років)</span>
+                  <span class="price__iner-desc">від 300 грн.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__iner-desc">Камуфлювання сивини</span>
+                  <span class="price__iner-desc">від 200 грн.</span>
+                </li>
               </ul>
             </li>
           </ul>
           <button
-            class="price-btn btn btn--mode-dark animate__animated animate__pulse animate__infinite"
+            class="price__btn btn btn--mode-dark animate__animated animate__pulse animate__infinite"
             type="button"
             data-open-modal
           >
@@ -225,71 +249,71 @@
       <!-- Ours masters section -->
       <section class="masters section" id="masters">
         <div class="container">
-          <p class="masters-uppertitle uppertitle uppertitle-mode-light">
+          <p class="masters__uppertitle uppertitle uppertitle--mode-light">
             для справжніх поціновувачів атмосфери
           </p>
           <h2 class="section-title section-title--mode-dark masters__title">Наші майстри</h2>
           <ul class="card-set list" lang="en">
-            <li class="card-set-item">
+            <li class="card-set__item">
               <img
-                class="master-img"
+                class="master__img"
                 src="./images/masters/img1.jpg"
                 alt="мастер стрижет мужчину"
                 width="370"
                 height="348"
               />
               <div class="masters__wrapper">
-                <h3 class="master-subtitle">John Smith</h3>
-                <p class="master-desc">Extreme Barber</p>
-                <ul class="master-social-list list">
-                  <li class="social-item">
+                <h3 class="master__subtitle">John Smith</h3>
+                <p class="master__desc">Extreme Barber</p>
+                <ul class="socials">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="instagram"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="twitter"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="facebook"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="linkedin"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -298,66 +322,66 @@
               </div>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set__item">
               <img
-                class="master-img"
+                class="master__img"
                 src="./images/masters/img2.jpg"
                 alt="мастер стрижет мужчину"
                 width="370"
                 height="348"
               />
               <div class="masters__wrapper">
-                <h3 class="master-subtitle">Michele Doe</h3>
-                <p class="master-desc">Extreme Barber</p>
-                <ul class="master-social-list list">
-                  <li class="social-item">
+                <h3 class="master__subtitle">Michele Doe</h3>
+                <p class="master__desc">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="instagram"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="twitter"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="facebook"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="linkedin"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -366,66 +390,66 @@
               </div>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set__item">
               <img
-                class="master-img"
+                class="master__img"
                 src="./images/masters/img3.jpg"
                 alt="мастер стрижет мужчину"
                 width="370"
                 height="348"
               />
               <div class="masters__wrapper">
-                <h3 class="master-subtitle">Alan Black</h3>
-                <p class="master-desc">Extreme Barber</p>
-                <ul class="master-social-list list">
-                  <li class="social-item">
+                <h3 class="master__subtitle">Alan Black</h3>
+                <p class="master__desc">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="instagram"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="twitter"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="facebook"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-item">
+                  <li class="socials__item">
                     <a
-                      class="social-link link"
+                      class="socials__link link"
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="linkedin"
                     >
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -441,40 +465,40 @@
       <section class="portfolio section">
         <div class="container">
           <h2 hidden>Портфоліо</h2>
-          <p class="uppertitle uppertitle-mode-light portfolio-uppertitle">
+          <p class="uppertitle uppertitle--mode-light portfolio__uppertitle">
             Латинською мовою "барба" означає "борода"
           </p>
-          <ul class="portfolio-list list card-set">
-            <li class="portfolio-item card-set-item">
+          <ul class="portfolio__list list card-set">
+            <li class="portfolio__item card-set__item">
               <img
-                class="portfolio-jpg"
+                class="portfolio__jpg"
                 src="./images/portfolio/gallery-1@2x.jpg"
                 alt="майстер стрижет мужчину"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="portfolio-item card-set-item">
+            <li class="portfolio__item card-set__item">
               <img
-                class="portfolio-jpg"
+                class="portfolio__jpg"
                 src="./images/portfolio/gallery-2@2x.jpg"
                 alt="бритье бороды"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="portfolio-item card-set-item">
+            <li class="portfolio__item card-set__item">
               <img
-                class="portfolio-jpg"
+                class="portfolio__jpg"
                 src="./images/portfolio/gallery-3@2x.jpg"
                 alt="бритье бороды"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="portfolio-item card-set-item">
+            <li class="portfolio__item card-set__item">
               <img
-                class="portfolio-jpg"
+                class="portfolio__jpg"
                 src="./images/portfolio/gallery-4@2x.jpg"
                 alt="бритье опасной бритвой"
                 width="270"
@@ -487,72 +511,73 @@
 
       <!-- contacts section-->
       <section class="contacts section" id="contacts">
-        <div class="container contacts-container">
-          <div class="contacts-form">
+        <div class="container contacts__container">
+          <div class="form-registration">
             <h2 class="section-title section-title--mode-light">Онлайн-запис</h2>
-            <form class="contact-form-list">
-              <div class="contacts-form-wrap">
-                <label class="contact-form-group" for="user-name">
+            <form class="form-registration__list">
+              <div class="form-registration__wrap">
+                <label class="form-registration__group" for="user-name">
                   <input
-                    class="contact-form-input"
+                    class="form-registration__input"
                     type="text"
                     name="user-name"
                     id="user-name"
                     placeholder="Ваше ім'я"
                     required
                   />
-                  <span class="contact-form-label">Им’я*</span>
+                  <span class="form-registration__label">Им’я*</span>
                 </label>
-                <label class="contact-form-group" for="user-phone">
+                <label class="form-registration__group" for="user-phone">
                   <input
-                    class="contact-form-input"
+                    class="form-registration__input"
                     type="tel"
                     name="user-phone"
                     id="user-phone"
                     placeholder="+38(066) 587-65-54"
                     required
                   />
-                  <span class="contact-form-label">Телефон*</span>
+                  <span class="form-registration__label">Телефон*</span>
                 </label>
               </div>
-              <label class="contact-form-group" for="user-message">
+              <label class="form-registration__group" for="user-message">
                 <textarea
-                  class="contact-form-message"
+                  class="form-registration__message"
                   id="user-message"
                   name="user-message"
                   cols="50"
-                  rows="5"
+                  rows="3"
                 >
                 </textarea>
-                <span class="contact-message-label">повідомлення</span>
+                <span class="form-registration__text">повідомлення</span>
               </label>
-              <button class="btn contacts-form-btn" type="submit">Відправити</button>
+              <button class="btn form-registration__btn" type="submit">Відправити</button>
             </form>
           </div>
-          <div class="contacts-group">
+
+          <div class="contacts__group">
             <h2 class="section-title section-title--mode-light">Контакти</h2>
-            <address class="contacts-address subtitle">
-              <ul class="contacts-address list">
-                <li class="contacts-item">
-                  <a class="contacts-link link" target="_blank" rel="noopener noreferrer" href="">
-                    <svg class="contacts-icon" width="24" height="24">
+            <address class="contacts__address subtitle">
+              <ul class="contacts__address list">
+                <li class="contacts__item">
+                  <a class="contacts__link link" target="_blank" rel="noopener noreferrer" href="">
+                    <svg class="contacts__icon" width="24" height="24">
                       <use href="./images/icons.svg#map-pin"></use>
                     </svg>
                     вул. Василькова, 7А <br />
                     Київ, 08132</a
                   >
                 </li>
-                <li class="contacts-item">
-                  <a class="contacts-link link" href="tel:+380441111111">
-                    <svg class="contacts-icon" width="24" height="24">
+                <li class="contacts__item">
+                  <a class="contacts__link link" href="tel:+380441111111">
+                    <svg class="contacts__icon" width="24" height="24">
                       <use href="./images/icons.svg#phone"></use>
                     </svg>
                     +38 044 111 11 11</a
                   >
                 </li>
-                <li class="contacts-item">
-                  <a class="contacts-link link" href="mailto:barbershop@email.com">
-                    <svg class="contacts-icon" width="24" height="24">
+                <li class="contacts__item">
+                  <a class="contacts__link link" href="mailto:barbershop@email.com">
+                    <svg class="contacts__icon" width="24" height="24">
                       <use href="./images/icons.svg#mail"></use>
                     </svg>
                     barbershop@gmail.com
@@ -560,8 +585,8 @@
                 </li>
               </ul>
             </address>
-            <p class="contacts-subtitle">час роботи</p>
-            <p class="contacts-time subtitle">
+            <p class="contacts__subtitle">час роботи</p>
+            <p class="contacts__time subtitle">
               Щоденно с <time datetime="09:00">9:00</time> до <time datetime="22.00">22:00</time>
             </p>
           </div>
@@ -571,12 +596,12 @@
 
     <!--footer section -->
     <footer class="footer">
-      <div class="container footer-container">
-        <p class="footer-copyright">&#169; Copyright 2020</p>
-        <ul class="footer-list list">
-          <li class="footer-item">
+      <div class="container footer__container">
+        <p class="footer__copyright">&#169; Copyright 2020</p>
+        <ul class="footer__list list">
+          <li class="footer__item">
             <a
-              class="footer-link link hero-link hero-link-img"
+              class="footer__link link social-list__link"
               target="_blank"
               rel="noopener noreferrer"
               href="https://Instagram.com"
@@ -584,9 +609,9 @@
               Instagram</a
             >
           </li>
-          <li class="footer-item">
+          <li class="footer__item">
             <a
-              class="footer-link link hero-link"
+              class="footer__link link social-list__link"
               target="_blank"
               rel="noopener noreferrer"
               href="https://Youtube.com"
