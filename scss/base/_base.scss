@@ -1,0 +1,9 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-txt-color);
+}
+
+body.no-scroll {
+    overflow: hidden;
+    padding-right: calc(100vw - 100%);
+}
