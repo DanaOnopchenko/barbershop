@@ -1,0 +1,32 @@
+.nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: var(--indent);
+}
+
+.nav__link {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.1em;
+    color: var(--primary-white-color);
+
+    transition: color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+    &--current {
+            color: var(--accent-color);
+        }
+}
+
+
+
