@@ -34,3 +34,11 @@
 .hero__uppertitle {
     margin-bottom: 24px;
 }
+
+.hero__desc {
+    width: 500px;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-ligth);
+}

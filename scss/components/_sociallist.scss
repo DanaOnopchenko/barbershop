@@ -1,0 +1,33 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &::before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: var(--main-txt-color);
+        }
+        &--rotate {
+            transform: rotate(-90deg) translateY(27px);
+            transform-origin: top left;
+                }
+}
+
+
+.social-list__link {
+    display: flex;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    transition: color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
