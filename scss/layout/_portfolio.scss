@@ -1,7 +1,11 @@
+.portfolio{
+    @extend %section;
+}
 .portfolio__uppertitle {
     margin-bottom: 44px;
 }
 
 .portfolio__list {
+    @extend %reset-list;
     --items: 4;
 }

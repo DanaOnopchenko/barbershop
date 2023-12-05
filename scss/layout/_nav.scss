@@ -3,11 +3,14 @@
 }
 
 .nav__list {
+    @extend %reset-list;
     display: flex;
     gap: var(--indent);
 }
 
 .nav__link {
+    @extend %reset-link;
+
     padding-top: 52px;
     padding-bottom: 52px;
 

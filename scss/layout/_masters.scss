@@ -1,4 +1,5 @@
 .masters {
+    @extend %section;
     background-color: var(--bg-grey);
 }
 

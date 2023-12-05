@@ -1,8 +1,13 @@
+
+.benefits{
+    @extend %section;
+}
 .benefits__container {
     display: flex;
 }
 
 .benefits__list {
+    @extend %reset-list;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;

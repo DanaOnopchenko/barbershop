@@ -1,4 +1,6 @@
 .price {
+    @extend %section;
+    
     max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +17,7 @@
 }
 
 .price__list {
+    @extend %reset-list;
     display: flex;
     margin-bottom: 50px;
 }
@@ -35,6 +38,7 @@
 
 
 .price__inner-list {
+    @extend %reset-list;
     color: var(--secondary-txt-ligth);
 }
 

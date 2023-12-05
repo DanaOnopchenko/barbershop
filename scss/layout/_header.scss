@@ -19,6 +19,7 @@
 }
 
 .header__phone {
+    @extend %reset-link;
     margin-right: 40px;
     padding-top: 52px;
     padding-bottom: 52px;

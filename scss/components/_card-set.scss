@@ -1,4 +1,5 @@
 .card-set {
+    @extend %reset-list;
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);

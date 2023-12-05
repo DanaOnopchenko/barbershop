@@ -1,4 +1,6 @@
 .contacts {
+    @extend %section;
+    
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +48,7 @@
 
 
 .contacts__address {
+    @extend %reset-list;
     margin-bottom: 70px;
 }
 
@@ -57,14 +60,13 @@
         }
 }
 
-
-
 .contacts__time {
     color: var(--secondary-txt-ligth);
     margin-bottom: 0px;
 }
 
 .contacts__link {
+    @extend %reset-link;
     display: flex;
     align-items: center;
     gap: 16px;

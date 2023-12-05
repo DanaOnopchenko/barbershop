@@ -1,4 +1,5 @@
 .social-list {
+    @extend %reset-list;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -18,6 +19,7 @@
 
 
 .social-list__link {
+    @extend %reset-link;
     display: flex;
     font-weight: 600;
     font-size: 11px;

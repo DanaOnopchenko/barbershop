@@ -1,5 +1,6 @@
 
 .logo {
+    @extend %reset-link;
     color: var(--main-txt-color);
     transition: color var(--anim-fast);
 
