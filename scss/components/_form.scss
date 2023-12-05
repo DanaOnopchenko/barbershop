@@ -1,0 +1,112 @@
+.form-registration {
+    width: 560px;
+}
+
+.form-registration__wrap {
+    display: flex;
+    gap: var(--indent);
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.form-registration__group {
+    position: relative;
+
+    &:first-child {
+            flex-basis: 270px;
+        }
+    
+    &:last-child {
+            flex-basis: 260px;
+        }
+}
+
+
+
+.form-registration__input {
+    width: 100%;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: var(--primary-white-color);
+    font-size: 14px;
+    transition: border-color var(--anim-fast);
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border-bottom: 1px solid var(--primary-white-color);
+        }
+    
+        &:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+    
+        &::placeholder {
+            color: transparent;
+            transition: color var(--anim-fast);
+        }
+
+        &:focus::placeholder {
+           color: rgba(157, 164, 189, 0.4);
+                }
+
+        &:valid:required:not(:placeholder-shown) {
+            border-bottom: 1px solid #008000;
+                                }
+        &:focus+.form-registration__label,
+        &:not(:placeholder-shown)+.form-registration__label {
+                transform: translateY(-20px) scale(0.8);
+                color: var(--primary-white-color);
+                                                                }
+}
+
+.form-registration__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transition: transformvar var(--anim-fast), color var(--anim-fast);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(15 / 11);
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.form-registration__message {
+    width: 100%;
+    height: 84px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    resize: none;
+    margin-bottom: 44px;
+    outline: transparent;
+    font-size: 12px;
+    color: var(--primary-white-color);
+
+    &:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+}
+
+
+.form-registration__text {
+    position: absolute;
+    left: 0;
+    top: -130px;
+    transform-origin: top left;
+    transition: transformvar var(--anim-fast), color var(--anim-fast);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(15 / 11);
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}

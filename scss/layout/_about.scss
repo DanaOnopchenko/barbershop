@@ -1,0 +1,30 @@
+.about__container {
+    display: flex;
+}
+
+.about__list {
+    display: flex;
+    gap: var(--indent);
+}
+
+.about__content {
+    margin-left: 64px;
+    flex-basis: 540px;
+}
+
+.about__uppertitle {
+    margin-bottom: 24px;
+}
+
+.about__subtitle {
+    color: var(--secondary-txt-grey);
+    margin-bottom: 20px;
+}
+
+.about__desc {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-grey);
+}

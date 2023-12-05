@@ -1,0 +1,30 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    color: var(--main-txt-color);
+
+    transition: color var(--anim-fast), box-shadow var(--anim-fast);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+}
+
+
+.socials__icon {
+    fill: currentColor;
+}

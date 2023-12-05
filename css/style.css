@@ -271,7 +271,8 @@ img {
 } */
 
 /* slider elements */
-.slider-controls {
+
+/* .slider-controls {
   position: absolute;
   right: 0;
   bottom: 40px;
@@ -326,11 +327,11 @@ img {
 .pagination__item.active {
   background-color: var(--primary-white-color);
   width: 18px;
-}
+} */
 
 /* About section */
 
-.about__container {
+/* .about__container {
   display: flex;
 }
 .about__list {
@@ -354,11 +355,11 @@ img {
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-txt-grey);
-}
+} */
 
 /* price section */
 
-.price {
+/* .price {
   max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
@@ -405,8 +406,10 @@ img {
 .price__btn {
   display: block;
   margin: 0 auto;
-}
+} */
+
 /* benefits section */
+/* 
 .benefits__container {
   display: flex;
 }
@@ -461,8 +464,10 @@ img {
 }
 .benefits__uppertitle {
   margin-bottom: 24px;
-}
+} */
+
 /* masters section */
+/* 
 .masters {
   background-color: var(--bg-grey);
 }
@@ -495,10 +500,10 @@ img {
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
+} */
 
 /* socials list*/
-.socials {
+/* .socials {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -525,19 +530,19 @@ img {
 }
 .socials__icon {
   fill: currentColor;
-}
+} */
 
 /* portfolio section */
-.portfolio__uppertitle {
+/* .portfolio__uppertitle {
   margin-bottom: 44px;
 }
 
 .portfolio__list {
   --items: 4;
-}
+} */
 
 /* contacts section */
-.contacts {
+/* .contacts {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -550,7 +555,8 @@ img {
 }
 .contacts__container {
   display: flex;
-}
+} */
+/* 
 .form-registration {
   width: 560px;
 }
@@ -647,8 +653,8 @@ img {
   letter-spacing: 1.1px;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
-}
-
+} */
+/* 
 .contacts__group {
   flex-basis: 50%;
   padding-left: 100px;
@@ -698,9 +704,9 @@ img {
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-color);
-}
+} */
 /* footer section*/
-.footer {
+/* .footer {
   min-height: 127px;
   align-items: center;
 }
@@ -721,9 +727,9 @@ img {
 .footer__link {
   padding-top: 56px;
   padding-bottom: 56px;
-}
+} */
 /* modal window */
-
+/* 
 .backdrop {
   position: fixed;
   top: 0;
@@ -869,4 +875,4 @@ img {
 }
 .modal-form__btn {
   margin: auto;
-}
+} */

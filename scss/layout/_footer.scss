@@ -1,0 +1,25 @@
+.footer {
+    min-height: 127px;
+    align-items: center;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.footer__copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: var(--secondary-txt-ligth);
+    margin-right: auto;
+}
+
+.footer__link {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
