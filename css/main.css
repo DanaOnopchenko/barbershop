@@ -34,8 +34,20 @@
 }
 
 .contacts, .portfolio, .masters, .benefits, .price, .about {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .contacts, .portfolio, .masters, .benefits, .price, .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts, .portfolio, .masters, .benefits, .price, .about {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .contacts__link, .nav__link, .header__phone, .socials__link, .social-list__link, .logo {
@@ -140,12 +152,25 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid red; */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .uppertitle {
@@ -871,27 +896,21 @@ img {
   color: var(--secondary-txt-ligth);
 }
 
-.about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: var(--indent);
-}
-
-.about__content {
-  margin-left: 64px;
-  -ms-flex-preferred-size: 540px;
-      flex-basis: 540px;
+  display: none;
 }
 
 .about__uppertitle {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .about__uppertitle {
+    margin-bottom: 24px;
+  }
+}
+
+.about__section-title {
+  max-width: 350px;
 }
 
 .about__subtitle {

@@ -4,22 +4,31 @@
 
 
 .about__container {
-    display: flex;
+    // display: flex;
 }
 
 .about__list {
     @extend %reset-list;
-    display: flex;
-    gap: var(--indent);
+    display: none;
+    // display: flex;
+    // gap: var(--indent);
 }
 
 .about__content {
-    margin-left: 64px;
-    flex-basis: 540px;
+    // margin-left: 64px;
+    // flex-basis: 540px;
 }
 
 .about__uppertitle {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    @media screen and (min-width:1200px){
+        margin-bottom: 24px;
+    }
+
+}
+
+.about__section-title{
+    max-width: 350px;
 }
 
 .about__subtitle {
