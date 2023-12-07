@@ -27,13 +27,18 @@
   </head>
   <body data-page>
     <!-- header section -->
-    <!-- <header class="header" data-header>
+    <header class="header" data-header>
       <div class="container header__container">
         <a href="" class="logo header__logo" data-logo>
           <svg class="logo__icon" width="69" height="56">
             <use href="./images/icons.svg#logo"></use>
           </svg>
         </a>
+        <button type="button">
+          <svg class="menu__btn" width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -51,11 +56,11 @@
           </ul>
         </nav>
         <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn btn btn--mode-dark" type="button" data-open-modal>
+        <button class="header__btn btn btn--mode-dark" type="button" data-open-modal>
           онлайн-запис
         </button>
       </div>
-    </header> -->
+    </header>
 
     <!-- main section -->
     <main class="main">
@@ -137,8 +142,8 @@
           </ul>
           <div class="about__content">
             <p class="about__uppertitle uppertitle uppertitle--mode-light">ПРО НАС</p>
-            <h2 class="about__section-title section-title section-title--mode-dark">
-              Найкращий Барбершоп твого міста
+            <h2 class="about__title section-title section-title--mode-dark">
+              Найкращий Барбершоп твого&nbsp;міста
               <!-- &nbsp; -->
             </h2>
             <h3 class="about__subtitle subtitle">
@@ -676,7 +681,42 @@
       </div>
     </div> -->
 
-    <script src="./js/header-scroll.js"></script>
-    <script src="./js/modal.js"></script>
+    <!--Mobile menu  -->
+    <div class="mobile__overlay">
+      <div class="mobile__container">
+        <ul class="mobile__nav">
+          <li class="mobile__item">
+            <a href="" class="mobile__link">Про нас</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="mobile__link">Послуги та ціни</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="mobile__link">Мастера</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="mobile__link">Контакти</a>
+          </li>
+        </ul>
+        <a class="mobile__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="mobile__btn btn btn--mode-ligth" type="button" data-open-modal>
+          онлайн-запис
+        </button>
+        <ul class="social-list">
+          <li class="">
+            <a class="" target="_blank" rel="noopener noreferrer" href="https://Instagram.com">
+              Instagram</a
+            >
+          </li>
+          <li class="">
+            <a class="" target="_blank" rel="noopener noreferrer" href="https://Youtube.com">
+              Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
