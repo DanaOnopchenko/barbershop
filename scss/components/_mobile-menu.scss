@@ -8,6 +8,17 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+    .menu-overlay & {
+        position: absolute;
+        top: 48px;
+         right: 30px;
+    }
+
 }
 .mobile__overlay{
     position: fixed;
@@ -24,6 +35,12 @@
     @media screen and (min-width: 768px) {
             display: none;
         }
+
+     &.is-open {
+             opacity: 1;
+             pointer-events: initial;
+             visibility: visible;
+     }
 }
 
 .mobile__container{
@@ -35,6 +52,11 @@
     background-color: var(--primary-white-color);
     height: 100%;
     padding: 118px 40px;
+    transform: translateX(100%);
+
+    .menu-overlay.is-open & {
+            transform: translateX(0);
+        }
 }
 .mobile__nav{
     @extend %reset-list;
