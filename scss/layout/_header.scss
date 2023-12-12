@@ -16,12 +16,25 @@
 .header__container {
     display: flex;
     align-items: center;
-}
+    }
 
 
 .header__logo {
-    margin-right: 71px;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+       
+    @media screen and (min-width:768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 64px;
+    }
+    @media  screen and (min-width:1200px) {
+        margin-right: 71px;
+    }
+    
 }
+
 .header__phone {
     @extend %reset-link;
     margin-right: 40px;

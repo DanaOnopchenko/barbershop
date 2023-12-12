@@ -1,8 +1,13 @@
 
 .logo {
     @extend %reset-link;
-    color: var(--main-txt-color);
+    color: var(--primary-white-color);
+    
     transition: color var(--anim-fast);
+
+    @media screen and (min-width:768px) {
+        color: var(--main-txt-color);
+    }
 
     &:hover,
     &:focus {
@@ -11,6 +16,7 @@
     
     &--white {
         color: var(--primary-white-color);
+
                 }        
 }
 

@@ -1,12 +1,20 @@
 .nav {
     display: none;
-    // margin-right: auto;
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-right: auto;
+    }
+    
 }
 
 .nav__list {
     @extend %reset-list;
     display: flex;
-    gap: var(--indent);
+    gap: 24px;
+    @media screen and (min-width:1200px){
+    gap: var(--indent);  
+    }
+    
 }
 
 .nav__link {

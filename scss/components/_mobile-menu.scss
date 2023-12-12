@@ -1,4 +1,4 @@
-.menu__btn{
+.mobile__btn{
     display: inline-flex;
     align-items: center;
     justify-items: center;
@@ -9,11 +9,11 @@
     border: none;
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
             display: none;
         }
 
-    .menu-overlay & {
+    .mobile__overlay & {
         position: absolute;
         top: 48px;
          right: 30px;
@@ -31,6 +31,10 @@
     background-color: rgba(25, 28, 38, 0.2);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
 
     @media screen and (min-width: 768px) {
             display: none;
@@ -54,7 +58,7 @@
     padding: 118px 40px;
     transform: translateX(100%);
 
-    .menu-overlay.is-open & {
+    .mobile__overlay.is-open & {
             transform: translateX(0);
         }
 }
