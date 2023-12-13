@@ -1,10 +1,21 @@
 .card-set {
     @extend %reset-list;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
-}
+      
+        display: flex;
+            flex-wrap: wrap;
+            gap: var(--indent);
+            justify-content: center;
+        
+    }
+   
 
 .card-set__item {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    @media screen and (min-width: 768px) {
+            --items: 2;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --items: 4;
+        }
 }

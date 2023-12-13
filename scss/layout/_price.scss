@@ -18,8 +18,11 @@
 
 .price__list {
     @extend %reset-list;
-    // display: flex;
+    
     margin-bottom: 50px;
+    @media screen and (min-width:1200px){
+    display: flex; 
+    }
 }
 
 .price__items {

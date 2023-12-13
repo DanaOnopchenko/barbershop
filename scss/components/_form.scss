@@ -1,24 +1,27 @@
 .form-registration {
-    width: 560px;
+    @extend %section;
+    width: 418px;
+  text-align: center;
+    
 }
 
 .form-registration__wrap {
-    display: flex;
-    gap: var(--indent);
-    align-items: center;
+    // display: flex;
+    // gap: var(--indent);
+    // align-items: center;
     margin-bottom: 44px;
 }
 
 .form-registration__group {
     position: relative;
 
-    &:first-child {
-            flex-basis: 270px;
-        }
+    // &:first-child {
+    //         flex-basis: 270px;
+    //     }
     
-    &:last-child {
-            flex-basis: 260px;
-        }
+    // &:last-child {
+    //         flex-basis: 260px;
+    //     }
 }
 
 
@@ -26,6 +29,7 @@
 .form-registration__input {
     width: 100%;
     height: 24px;
+    padding: 10px;
     background-color: transparent;
     border: none;
     outline: transparent;

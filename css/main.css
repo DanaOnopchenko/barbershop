@@ -33,18 +33,18 @@
   margin: -1px;
 }
 
-.contacts, .portfolio, .masters, .benefits, .price, .about {
+.contacts__group, .portfolio, .masters, .benefits, .price, .about, .form-registration {
   padding-top: 84px;
   padding-bottom: 84px;
 }
 @media screen and (min-width: 768px) {
-  .contacts, .portfolio, .masters, .benefits, .price, .about {
+  .contacts__group, .portfolio, .masters, .benefits, .price, .about, .form-registration {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts, .portfolio, .masters, .benefits, .price, .about {
+  .contacts__group, .portfolio, .masters, .benefits, .price, .about, .form-registration {
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -144,11 +144,24 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: var(--indent);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-set__item {
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    --items: 4;
+  }
 }
 
 .container {
@@ -212,9 +225,9 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.05em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .section-title {
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 .section-title--mode-light {
@@ -421,35 +434,22 @@ img {
 }
 
 .form-registration {
-  width: 560px;
+  width: 418px;
+  text-align: center;
 }
 
 .form-registration__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: var(--indent);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 44px;
 }
 
 .form-registration__group {
   position: relative;
 }
-.form-registration__group:first-child {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
-}
-.form-registration__group:last-child {
-  -ms-flex-preferred-size: 260px;
-      flex-basis: 260px;
-}
 
 .form-registration__input {
   width: 100%;
   height: 24px;
+  padding: 10px;
   background-color: transparent;
   border: none;
   outline: transparent;
@@ -1123,9 +1123,15 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .about__title {
     max-width: 380px;
+    font-size: 42px;
   }
 }
 
@@ -1158,6 +1164,13 @@ img {
 
 .price__list {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .price__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .price__items {
@@ -1220,9 +1233,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .benefits__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1238,11 +1254,16 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
-    width: 700px;
+    width: 500px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .benefits__list {
+    margin-left: 0;
   }
 }
 
@@ -1259,6 +1280,11 @@ img {
   .benefits__item {
     width: 210px;
     padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .benefits__item {
+    width: 173px;
   }
 }
 .benefits__item:nth-child(2n+1) {
@@ -1298,6 +1324,17 @@ img {
 
 .benefits__content {
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__content {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__content {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
 }
 
 .benefits__uppertitle {
@@ -1344,17 +1381,11 @@ img {
   margin-bottom: 44px;
 }
 
-.portfolio__list {
-  --items: 4;
-}
-
 .contacts {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bg-dark);
-  background-image: url(../images/contacts/contacts-bg.png);
-  background-repeat: no-repeat;
   background-position: top 0 left calc(50% + 328px);
 }
 
@@ -1362,12 +1393,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.contacts__group {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-left: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts__address {
@@ -1430,20 +1459,27 @@ img {
 
 .footer {
   min-height: 127px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 55px;
-  padding-right: 55px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 .footer__copyright {
