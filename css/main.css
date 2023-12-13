@@ -435,15 +435,56 @@ img {
 
 .form-registration {
   width: 418px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .form-registration {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .form-registration {
+    max-width: 50%;
+  }
+}
+
+.form__title {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .form__title {
+    text-align: left;
+  }
 }
 
 .form-registration__wrap {
-  margin-bottom: 44px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .form-registration__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: var(--indent);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .form-registration__group {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .form-registration__group:first-child {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
+  .form-registration__group:last-child {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
 }
 
 .form-registration__input {
@@ -458,6 +499,7 @@ img {
   font-size: 14px;
   -webkit-transition: border-color var(--anim-fast);
   transition: border-color var(--anim-fast);
+  margin-bottom: 25px;
 }
 .form-registration__input:not(:-moz-placeholder-shown) {
   border-bottom: 1px solid var(--primary-white-color);
@@ -582,6 +624,15 @@ img {
   letter-spacing: 1.1px;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+}
+
+.form__btn {
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .form__btn {
+    margin-left: auto;
+  }
 }
 
 .backdrop {
@@ -813,7 +864,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -857,8 +910,6 @@ img {
 }
 
 .mobile__container {
-  max-width: 337px;
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,6 +917,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 337px;
+  margin-left: auto;
   background-color: var(--primary-white-color);
   height: 100%;
   padding: 118px 40px;
@@ -1382,21 +1435,53 @@ img {
 }
 
 .contacts {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--bg-dark);
-  background-position: top 0 left calc(50% + 328px);
 }
 
-.contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contacts__group {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__group {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 100px;
+  }
+}
+
+.contact__title {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts__wrap {
+    display: block;
+  }
 }
 
 .contacts__address {
@@ -1459,6 +1544,7 @@ img {
 
 .footer {
   min-height: 127px;
+  padding-top: 44px;
 }
 
 .footer__container {
@@ -1492,6 +1578,6 @@ img {
 }
 
 .footer__link {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
