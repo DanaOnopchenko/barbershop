@@ -266,7 +266,7 @@
                 class="master__img"
                 src="./images/masters/img1.jpg"
                 alt="мастер стрижет мужчину"
-                width="450"
+                width="418"
                 height="348"
               />
               <div class="masters__wrapper">
@@ -477,14 +477,34 @@
           </p>
           <ul class="portfolio__list card-set">
             <li class="portfolio__item card-set__item">
-              <img
-                srcset=""
-                class="portfolio__jpg"
-                src="./images/portfolio/gallery-1@2x.jpg"
-                alt="майстер стрижет мужчину"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_lg.webp 1x,
+                    ./images/portfolio/gallery-1@2x_lg.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_md.webp 1x,
+                    ./images/portfolio/gallery-1@2x_md.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_sm.webp 1x,
+                    ./images/portfolio/gallery-1@2x_sm.webp 2x
+                  "
+                />
+                <img
+                  class="portfolio__jpg"
+                  src="./images/portfolio/gallery-1@1x_lg.jpg"
+                  alt="майстер стрижет мужчину"
+                />
+              </picture>
             </li>
             <li class="portfolio__item card-set__item">
               <img
