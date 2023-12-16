@@ -121,22 +121,48 @@
         <div class="container about__container">
           <ul class="about__list">
             <li class="about-list__item">
-              <img
-                class="about-list__img"
-                src="./images/about/img-1.jpg"
-                alt="бритье бороды"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images/about/img-1@1x_lg.webp 1x, ./images/about/img-1@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/img-1@1x_lg.jpeg 1x, ./images/about/img-1@2x_lg.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/img-1@1x_md.webp 1x, ./images/about/img-1@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/img-2@1x_lg.jpeg 1x, ./images/about/img-2@2x_lg.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <img class="about-list__img" src="./images/about/img-1.jpg" alt="бритье бороды" />
+              </picture>
             </li>
             <li class="about-list__item">
-              <img
-                class="about-list__img"
-                src="./images/about/img-2.jpg"
-                alt="бритье опасной бритвой"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images/about/img-2@1x_lg.webp 1x, ./images/about/img-2@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/img-2@1x_md.webp 1x, ./images/about/img-2@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="about-list__img"
+                  src="./images/about/img-2.jpg"
+                  alt="бритье опасной бритвой"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about__content">
@@ -261,14 +287,44 @@
           <h2 class="section-title section-title--mode-dark masters__title">Наші майстри</h2>
           <ul class="card-set" lang="en">
             <li class="card-set__item">
-              <img
-                srcset="./images/masters/img1@1x_sm.jpg 1x, ./images/masters/img1@2x_sm.jpg 2x"
-                class="master__img"
-                src="./images/masters/img1.jpg"
-                alt="мастер стрижет мужчину"
-                width="418"
-                height="348"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img1@1x_lg.webp 1x, ./images/masters/img1@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img1@1x_lg.jpeg 1x, ./images/masters/img1@2x_lg.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img1@1x_md.webp 1x, ./images/masters/img1@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img1@1x_md.jpeg 1x, ./images/masters/img1@2x_md.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img1@1x_sm.webp 1x, ./images/masters/img1@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img1@1x_sm.jpeg 1x, ./images/masters/img1@2x_sm.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="master__img"
+                  src="./images/masters/img1.jpg"
+                  alt="мастер стрижет мужчину"
+                />
+              </picture>
+
               <div class="masters__wrapper">
                 <h3 class="master__subtitle">John Smith</h3>
                 <p class="master__desc">Extreme Barber</p>
@@ -330,13 +386,45 @@
             </li>
 
             <li class="card-set__item">
-              <img
-                class="master__img"
-                src="./images/masters/img2.jpg"
-                alt="мастер стрижет мужчину"
-                width="370"
-                height="348"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img2@1x_lg.webp 1x, ./images/masters/img2@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img2@1x_lg.jpeg 1x, ./images/masters/img2@2x_lg.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img2@1x_md.webp 1x, ./images/masters/img2@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img2@1x_md.jpeg 1x, ./images/masters/img2@2x_md.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img2@1x_sm.webp 1x, ./images/masters/img2@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img2@1x_sm.jpeg 1x, ./images/masters/img2@2x_sm.jpeg 2x"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="master__img"
+                  src="./images/masters/img2.jpg"
+                  alt="мастер стрижет мужчину"
+                />
+              </picture>
+
               <div class="masters__wrapper">
                 <h3 class="master__subtitle">Michele Doe</h3>
                 <p class="master__desc">Extreme Barber</p>
@@ -398,13 +486,44 @@
             </li>
 
             <li class="card-set__item">
-              <img
-                class="master__img"
-                src="./images/masters/img3.jpg"
-                alt="мастер стрижет мужчину"
-                width="370"
-                height="348"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img3@1x_lg.webp 1x, ./images/masters/img3@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/masters/img3@1x_lg.jpeg 1x, ./images/masters/img3@2x_lg.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img3@1x_md.webp 1x, ./images/masters/img3@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/masters/img3@1x_md.jpeg 1x, ./images/masters/img3@2x_md.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img3@1x_sm.webp 1x, ./images/masters/img3@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/masters/img3@1x_sm.jpeg 1x, ./images/masters/img3@2x_sm.jpeg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="master__img"
+                  src="./images/masters/img3.jpg"
+                  alt="мастер стрижет мужчину"
+                />
+              </picture>
+
               <div class="masters__wrapper">
                 <h3 class="master__subtitle">Alan Black</h3>
                 <p class="master__desc">Extreme Barber</p>
@@ -484,6 +603,15 @@
                     ./images/portfolio/gallery-1@1x_lg.webp 1x,
                     ./images/portfolio/gallery-1@2x_lg.webp 2x
                   "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_lg.jpg 1x,
+                    ./images/portfolio/gallery-1@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
                 />
                 <source
                   media="(min-width: 768px)"
@@ -491,6 +619,15 @@
                     ./images/portfolio/gallery-1@1x_md.webp 1x,
                     ./images/portfolio/gallery-1@2x_md.webp 2x
                   "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_md.jpg 1x,
+                    ./images/portfolio/gallery-1@2x_md.jpg 2x
+                  "
+                  type="image/jpeg"
                 />
                 <source
                   media="(max-width: 767px)"
@@ -498,6 +635,15 @@
                     ./images/portfolio/gallery-1@1x_sm.webp 1x,
                     ./images/portfolio/gallery-1@2x_sm.webp 2x
                   "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-1@1x_sm.jpg 1x,
+                    ./images/portfolio/gallery-1@2x_sm.jpg 2x
+                  "
+                  type="image/jpeg"
                 />
                 <img
                   class="portfolio__jpg"
@@ -507,31 +653,176 @@
               </picture>
             </li>
             <li class="portfolio__item card-set__item">
-              <img
-                class="portfolio__jpg"
-                src="./images/portfolio/gallery-2@2x.jpg"
-                alt="бритье бороды"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_lg.webp 1x,
+                    ./images/portfolio/gallery-2@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_lg.jpg 1x,
+                    ./images/portfolio/gallery-2@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_md.webp 1x,
+                    ./images/portfolio/gallery-2@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_md.jpg 1x,
+                    ./images/portfolio/gallery-2@2x_md.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_sm.webp 1x,
+                    ./images/portfolio/gallery-2@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-2@1x_sm.jpg 1x,
+                    ./images/portfolio/gallery-2@2x_sm.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__jpg"
+                  src="./images/portfolio/gallery-2@1x.jpg"
+                  alt="бритье бороды"
+                />
+              </picture>
             </li>
             <li class="portfolio__item card-set__item">
-              <img
-                class="portfolio__jpg"
-                src="./images/portfolio/gallery-3@2x.jpg"
-                alt="бритье бороды"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_lg.webp 1x,
+                    ./images/portfolio/gallery-3@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_lg.jpg 1x,
+                    ./images/portfolio/gallery-3@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_md.webp 1x,
+                    ./images/portfolio/gallery-3@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_md.jpg 1x,
+                    ./images/portfolio/gallery-3@2x_md.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_sm.webp 1x,
+                    ./images/portfolio/gallery-3@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-3@1x_sm.jpg 1x,
+                    ./images/portfolio/gallery-3@2x_sm.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="portfolio__jpg"
+                  src="./images/portfolio/gallery-3@1x.jpg"
+                  alt="бритье бороды"
+                />
+              </picture>
             </li>
             <li class="portfolio__item card-set__item">
-              <img
-                class="portfolio__jpg"
-                src="./images/portfolio/gallery-4@2x.jpg"
-                alt="бритье опасной бритвой"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_lg.webp 1x,
+                    ./images/portfolio/gallery-4@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_lg.jpg 1x,
+                    ./images/portfolio/gallery-4@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_md.webp 1x,
+                    ./images/portfolio/gallery-4@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_md.jpg 1x,
+                    ./images/portfolio/gallery-4@2x_md.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_sm.webp 1x,
+                    ./images/portfolio/gallery-4@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/gallery-4@1x_sm.jpg 1x,
+                    ./images/portfolio/gallery-4@2x_sm.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="portfolio__jpg"
+                  src="./images/portfolio/gallery-4@1x.jpg"
+                  alt="бритье опасной бритвой"
+                />
+              </picture>
             </li>
           </ul>
         </div>
