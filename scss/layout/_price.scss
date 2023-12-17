@@ -10,6 +10,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    background-image: url(../images/price/img@1x_sm.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url(../images/price/img@2x_sm.png);
+        }
+    @media screen and (min-width: 768px){
+        background-image: url(../images/price/img@1x_md.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/price/img@2x_md.png);
+            }
+    }
+    @media screen and (min-width: 1200px){
+        background-image: url(../images/price/img@1x_lg.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/price/img@2x_lg.png);
+            }
+        
+    }
 }
 
 .price__uppertitle {
